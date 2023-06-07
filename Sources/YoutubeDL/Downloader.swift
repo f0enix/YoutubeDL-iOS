@@ -22,8 +22,8 @@
 //  THE SOFTWARE.
 //
 
-import UIKit
-
+//import UIKit
+import Foundation
 public enum NotificationRequestIdentifier: String {
     case transcode
 }
@@ -325,17 +325,17 @@ var isTest = false
 // FIXME: move to view controller?
 @available(iOS 12.0, *)
 public func notify(body: String, identifier: String = "Download") {
-    guard !isTest else { return }
-    UNUserNotificationCenter.current().requestAuthorization(options: [.alert, .badge, .sound, .providesAppNotificationSettings]) { (granted, error) in
-        guard granted else {
-            print(#function, "granted =", granted, error ?? "no error")
-            return
-        }
-        
-        print(#function, body)
-        let content = UNMutableNotificationContent()
-        content.body = body
-        let notificationRequest = UNNotificationRequest(identifier: identifier, content: content, trigger: nil)
-        UNUserNotificationCenter.current().add(notificationRequest, withCompletionHandler: nil)
-    }
+//    guard !isTest else { return }
+//    UNUserNotificationCenter.current().requestAuthorization(options: [.alert, .badge, .sound, .providesAppNotificationSettings]) { (granted, error) in
+//        guard granted else {
+//            print(#function, "granted =", granted, error ?? "no error")
+//            return
+//        }
+//        
+//        print(#function, body)
+//        let content = UNMutableNotificationContent()
+//        content.body = body
+//        let notificationRequest = UNNotificationRequest(identifier: identifier, content: content, trigger: nil)
+//        UNUserNotificationCenter.current().add(notificationRequest, withCompletionHandler: nil)
+//    }
 }
