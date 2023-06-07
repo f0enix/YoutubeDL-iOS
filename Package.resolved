@@ -3,11 +3,11 @@
     "pins": [
       {
         "package": "Python-iOS",
-        "repositoryURL": "https://github.com/kewlbear/Python-iOS.git",
+        "repositoryURL": "https://github.com/f0enix/Python-iOS.git",
         "state": {
-          "branch": null,
-          "revision": "784b391aa25c765761998cacb2d1fd5c86014164",
-          "version": "0.1.1-b20230312-012746"
+          "branch": "kivy-ios",
+          "revision": "8a48fe3c719fba6c951dcdbe200e76434bf901d6",
+          "version": null
         }
       },
       {

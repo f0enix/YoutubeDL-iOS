@@ -4,7 +4,7 @@ import PackageDescription
 
 let package = Package(
     name: "YoutubeDL-iOS",
-    platforms: [.iOS(.v13)],
+    platforms: [.iOS(.v13), .macOS(.v11)],
     products: [
         .library(
             name: "YoutubeDL",
@@ -12,7 +12,7 @@ let package = Package(
     ],
     dependencies: [
         .package(url: "https://github.com/pvieito/PythonKit.git", from: "0.3.1"),
-        .package(url: "https://github.com/kewlbear/Python-iOS.git", from: "0.1.1-b"),
+        .package(url: "https://github.com/f0enix/Python-iOS.git", .branch("kivy-ios"))
     ],
     targets: [
         .target(
